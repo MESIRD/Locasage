@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62C38C44C62005D2F225A214 /* libPods-MotionTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D321410B5E765E312B7C7F /* libPods-MotionTracker.a */; };
+		D739CE821DA69E4B009A4F4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D739CE811DA69E4B009A4F4D /* main.m */; };
+		D739CE851DA69E4B009A4F4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D739CE841DA69E4B009A4F4D /* AppDelegate.m */; };
+		D739CE8B1DA69E4B009A4F4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D739CE891DA69E4B009A4F4D /* Main.storyboard */; };
+		D739CE8D1DA69E4B009A4F4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D739CE8C1DA69E4B009A4F4D /* Assets.xcassets */; };
+		D739CE901DA69E4B009A4F4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D739CE8E1DA69E4B009A4F4D /* LaunchScreen.storyboard */; };
+		D739CE991DA6A3AB009A4F4D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D739CE981DA6A3AB009A4F4D /* CoreMotion.framework */; };
+		D739CE9B1DA6BA16009A4F4D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D739CE9A1DA6BA16009A4F4D /* CoreLocation.framework */; };
+		D79D8D821DA8159300CF961F /* TextTrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79D8D811DA8159300CF961F /* TextTrackerViewController.m */; };
+		D79D8D851DA8181300CF961F /* BarragePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79D8D841DA8181300CF961F /* BarragePostViewController.m */; };
+		D79D8D881DA8181D00CF961F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79D8D871DA8181D00CF961F /* HomeViewController.m */; };
+		D79D8D8B1DA8203800CF961F /* MTPost.m in Sources */ = {isa = PBXBuildFile; fileRef = D79D8D8A1DA8203800CF961F /* MTPost.m */; };
+		D7D2DFBB1DA7534300CACC6E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D2DFBA1DA7534300CACC6E /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C5114C95FC7A58867117994 /* Pods-MotionTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotionTracker/Pods-MotionTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		64D321410B5E765E312B7C7F /* libPods-MotionTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MotionTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7823A8418B09BD1A1E4401FA /* Pods-MotionTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotionTracker/Pods-MotionTracker.release.xcconfig"; sourceTree = "<group>"; };
+		D739CE7D1DA69E4B009A4F4D /* MotionTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D739CE811DA69E4B009A4F4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D739CE831DA69E4B009A4F4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D739CE841DA69E4B009A4F4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D739CE8A1DA69E4B009A4F4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D739CE8C1DA69E4B009A4F4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D739CE8F1DA69E4B009A4F4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D739CE911DA69E4B009A4F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D739CE981DA6A3AB009A4F4D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D739CE9A1DA6BA16009A4F4D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D79D8D801DA8159300CF961F /* TextTrackerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTrackerViewController.h; sourceTree = "<group>"; };
+		D79D8D811DA8159300CF961F /* TextTrackerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTrackerViewController.m; sourceTree = "<group>"; };
+		D79D8D831DA8181300CF961F /* BarragePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarragePostViewController.h; sourceTree = "<group>"; };
+		D79D8D841DA8181300CF961F /* BarragePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarragePostViewController.m; sourceTree = "<group>"; };
+		D79D8D861DA8181D00CF961F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D79D8D871DA8181D00CF961F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D79D8D891DA8203800CF961F /* MTPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPost.h; sourceTree = "<group>"; };
+		D79D8D8A1DA8203800CF961F /* MTPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPost.m; sourceTree = "<group>"; };
+		D7D2DFBA1DA7534300CACC6E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D739CE7A1DA69E4B009A4F4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D2DFBB1DA7534300CACC6E /* AVFoundation.framework in Frameworks */,
+				D739CE9B1DA6BA16009A4F4D /* CoreLocation.framework in Frameworks */,
+				D739CE991DA6A3AB009A4F4D /* CoreMotion.framework in Frameworks */,
+				62C38C44C62005D2F225A214 /* libPods-MotionTracker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A4354E32CE0C91284776336 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C5114C95FC7A58867117994 /* Pods-MotionTracker.debug.xcconfig */,
+				7823A8418B09BD1A1E4401FA /* Pods-MotionTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D739CE741DA69E4B009A4F4D = {
+			isa = PBXGroup;
+			children = (
+				D739CE7F1DA69E4B009A4F4D /* MotionTracker */,
+				D739CE7E1DA69E4B009A4F4D /* Products */,
+				D739CE971DA6A3AB009A4F4D /* Frameworks */,
+				8A4354E32CE0C91284776336 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D739CE7E1DA69E4B009A4F4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D739CE7D1DA69E4B009A4F4D /* MotionTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D739CE7F1DA69E4B009A4F4D /* MotionTracker */ = {
+			isa = PBXGroup;
+			children = (
+				D739CE831DA69E4B009A4F4D /* AppDelegate.h */,
+				D739CE841DA69E4B009A4F4D /* AppDelegate.m */,
+				D79D8D861DA8181D00CF961F /* HomeViewController.h */,
+				D79D8D871DA8181D00CF961F /* HomeViewController.m */,
+				D79D8D831DA8181300CF961F /* BarragePostViewController.h */,
+				D79D8D841DA8181300CF961F /* BarragePostViewController.m */,
+				D79D8D801DA8159300CF961F /* TextTrackerViewController.h */,
+				D79D8D811DA8159300CF961F /* TextTrackerViewController.m */,
+				D739CE891DA69E4B009A4F4D /* Main.storyboard */,
+				D739CE8C1DA69E4B009A4F4D /* Assets.xcassets */,
+				D739CE8E1DA69E4B009A4F4D /* LaunchScreen.storyboard */,
+				D739CE911DA69E4B009A4F4D /* Info.plist */,
+				D739CE801DA69E4B009A4F4D /* Supporting Files */,
+				D79D8D891DA8203800CF961F /* MTPost.h */,
+				D79D8D8A1DA8203800CF961F /* MTPost.m */,
+			);
+			path = MotionTracker;
+			sourceTree = "<group>";
+		};
+		D739CE801DA69E4B009A4F4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D739CE811DA69E4B009A4F4D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D739CE971DA6A3AB009A4F4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7D2DFBA1DA7534300CACC6E /* AVFoundation.framework */,
+				D739CE9A1DA6BA16009A4F4D /* CoreLocation.framework */,
+				D739CE981DA6A3AB009A4F4D /* CoreMotion.framework */,
+				64D321410B5E765E312B7C7F /* libPods-MotionTracker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D739CE7C1DA69E4B009A4F4D /* MotionTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D739CE941DA69E4B009A4F4D /* Build configuration list for PBXNativeTarget "MotionTracker" */;
+			buildPhases = (
+				B5A2A5E96C021835B8B2BC89 /* [CP] Check Pods Manifest.lock */,
+				D739CE791DA69E4B009A4F4D /* Sources */,
+				D739CE7A1DA69E4B009A4F4D /* Frameworks */,
+				D739CE7B1DA69E4B009A4F4D /* Resources */,
+				F58221B9601B0A5B132F3F46 /* [CP] Embed Pods Frameworks */,
+				C8FD4B9CAA0F231EB7340C71 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotionTracker;
+			productName = MotionTracker;
+			productReference = D739CE7D1DA69E4B009A4F4D /* MotionTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D739CE751DA69E4B009A4F4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = mesird;
+				TargetAttributes = {
+					D739CE7C1DA69E4B009A4F4D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WZ4EP5ZM3Y;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D739CE781DA69E4B009A4F4D /* Build configuration list for PBXProject "MotionTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D739CE741DA69E4B009A4F4D;
+			productRefGroup = D739CE7E1DA69E4B009A4F4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D739CE7C1DA69E4B009A4F4D /* MotionTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D739CE7B1DA69E4B009A4F4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D739CE901DA69E4B009A4F4D /* LaunchScreen.storyboard in Resources */,
+				D739CE8D1DA69E4B009A4F4D /* Assets.xcassets in Resources */,
+				D739CE8B1DA69E4B009A4F4D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5A2A5E96C021835B8B2BC89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8FD4B9CAA0F231EB7340C71 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotionTracker/Pods-MotionTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F58221B9601B0A5B132F3F46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotionTracker/Pods-MotionTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D739CE791DA69E4B009A4F4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79D8D851DA8181300CF961F /* BarragePostViewController.m in Sources */,
+				D739CE851DA69E4B009A4F4D /* AppDelegate.m in Sources */,
+				D79D8D821DA8159300CF961F /* TextTrackerViewController.m in Sources */,
+				D739CE821DA69E4B009A4F4D /* main.m in Sources */,
+				D79D8D8B1DA8203800CF961F /* MTPost.m in Sources */,
+				D79D8D881DA8181D00CF961F /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D739CE891DA69E4B009A4F4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D739CE8A1DA69E4B009A4F4D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D739CE8E1DA69E4B009A4F4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D739CE8F1DA69E4B009A4F4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D739CE921DA69E4B009A4F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D739CE931DA69E4B009A4F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D739CE951DA69E4B009A4F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C5114C95FC7A58867117994 /* Pods-MotionTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WZ4EP5ZM3Y;
+				INFOPLIST_FILE = MotionTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mesird.MotionTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D739CE961DA69E4B009A4F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7823A8418B09BD1A1E4401FA /* Pods-MotionTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WZ4EP5ZM3Y;
+				INFOPLIST_FILE = MotionTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mesird.MotionTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D739CE781DA69E4B009A4F4D /* Build configuration list for PBXProject "MotionTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D739CE921DA69E4B009A4F4D /* Debug */,
+				D739CE931DA69E4B009A4F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D739CE941DA69E4B009A4F4D /* Build configuration list for PBXNativeTarget "MotionTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D739CE951DA69E4B009A4F4D /* Debug */,
+				D739CE961DA69E4B009A4F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D739CE751DA69E4B009A4F4D /* Project object */;
+}
