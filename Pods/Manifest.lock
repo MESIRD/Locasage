@@ -1,12 +1,37 @@
 PODS:
+  - AVOSCloud (3.4.4)
+  - AVOSCloudCrashReporting (3.4.4):
+    - AVOSCloud (= 3.4.4)
+    - AVOSCloudCrashReporting/_ARC (= 3.4.4)
+    - AVOSCloudCrashReporting/_NOARC (= 3.4.4)
+  - AVOSCloudCrashReporting/_ARC (3.4.4):
+    - AVOSCloud (= 3.4.4)
+    - AVOSCloudCrashReporting/_NOARC (= 3.4.4)
+  - AVOSCloudCrashReporting/_NOARC (3.4.4):
+    - AVOSCloud (= 3.4.4)
+  - AVOSCloudIM (3.4.4):
+    - AVOSCloud (= 3.4.4)
+    - AVOSCloudIM/_ARC (= 3.4.4)
+    - AVOSCloudIM/_NOARC (= 3.4.4)
+  - AVOSCloudIM/_ARC (3.4.4):
+    - AVOSCloud (= 3.4.4)
+    - AVOSCloudIM/_NOARC (= 3.4.4)
+  - AVOSCloudIM/_NOARC (3.4.4):
+    - AVOSCloud (= 3.4.4)
   - BarrageRenderer (1.6.0)
 
 DEPENDENCIES:
+  - AVOSCloud
+  - AVOSCloudCrashReporting
+  - AVOSCloudIM
   - BarrageRenderer (~> 1.6.0)
 
 SPEC CHECKSUMS:
+  AVOSCloud: 50a81ba9fe043750592355d13589b108771f3724
+  AVOSCloudCrashReporting: b1e94cb0929b1f7b688d8c7995b248583af2b58d
+  AVOSCloudIM: ad650bf0635e95b12d1aec156131b71d320086d2
   BarrageRenderer: a41bf2260c5ec66b974ec685e9da840c1a8c358f
 
-PODFILE CHECKSUM: 1c053897e1715a45b9c2416456c9ebf81584e92b
+PODFILE CHECKSUM: 4644f086063b569f22716a8f3dda69094cd4ded5
 
 COCOAPODS: 1.0.1

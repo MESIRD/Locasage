@@ -29,6 +29,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self.view layoutIfNeeded];
+    
     // Create some message
     [self _initMessage];
 }

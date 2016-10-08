@@ -12,6 +12,8 @@
 
 @property (nonatomic, assign) double longitude;
 @property (nonatomic, assign) double latitude;
-@property (nonatomic, strong) NSString *text;
+@property (nonatomic, copy) NSString *text;
+
+- (instancetype)initWithText:(NSString *)text longitude:(double)longitude andLatitude:(double)latitude;
 
 @end

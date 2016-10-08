@@ -10,4 +10,14 @@
 
 @implementation MTPost
 
+- (instancetype)initWithText:(NSString *)text longitude:(double)longitude andLatitude:(double)latitude {
+    
+    if (self = [super init]) {
+        self.text = text;
+        self.longitude = longitude;
+        self.latitude = latitude;
+    }
+    return self;
+}
+
 @end

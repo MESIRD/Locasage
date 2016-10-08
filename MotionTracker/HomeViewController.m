@@ -11,21 +11,55 @@
 #import "BarragePostViewController.h"
 #import "TextTrackerViewController.h"
 
-@interface HomeViewController ()
+@interface HomeViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIView *profileSetView;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarView;
+@property (weak, nonatomic) IBOutlet UITextField *nickField;
+
+@property (nonatomic, strong) UIImagePickerController *imagePicker;
+
 
 @end
 
 @implementation HomeViewController
 
+- (UIImagePickerController *)imagePicker {
+    
+    if (!_imagePicker) {
+        _imagePicker = [[UIImagePickerController alloc] init];
+        _imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        _imagePicker.delegate   = self;
+        _imagePicker.allowsEditing = YES;
+    }
+    return _imagePicker;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    _profileSetView.hidden = YES;
+    [self _firstTimeLaunch];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     self.navigationController.navigationBar.hidden = YES;
+}
+
+- (void)_firstTimeLaunch {
+    
+//    id firstLaunch = [[NSUserDefaults standardUserDefaults] objectForKey:@"firstLaunch"];
+//    if (!firstLaunch) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"1" forKey:@"firstLaunch"];
+        
+        _profileSetView.hidden = NO;
+        _avatarView.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapOnAvatarView:)];
+        [_avatarView addGestureRecognizer:tapRecognizer];
+//    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,6 +77,35 @@
     
     TextTrackerViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass(TextTrackerViewController.class)];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)submitProfileButtonPressed:(id)sender {
+    
+    _profileSetView.hidden = YES;
+}
+
+- (void)tapOnAvatarView:(UITapGestureRecognizer *)recognizer {
+    [self presentViewController:self.imagePicker animated:YES completion:nil];
+}
+
+#pragma mark - UIImagePickerControllerDelegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    UIImage *image = info[UIImagePickerControllerEditedImage];
+    if (!image) {
+        NSLog(@"No image is selected");
+        return;
+    }
+    
+    
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*
