@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TZImagePickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -37,7 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>611D331FB43AC70D93F97DA4B268EB15</key>
+		<key>8C7DDD0F04E5B357CA3E633CBC24A23B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +58,11 @@
 			<true/>
 		</dict>
 		<key>DD308F8DCB7E18685A86D39287AD0CD2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB476287DCCF87560D322BFE3DFD49FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

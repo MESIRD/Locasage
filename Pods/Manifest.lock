@@ -19,19 +19,22 @@ PODS:
   - AVOSCloudIM/_NOARC (3.4.4):
     - AVOSCloud (= 3.4.4)
   - BarrageRenderer (1.6.0)
+  - TZImagePickerController (1.6.8)
 
 DEPENDENCIES:
   - AVOSCloud
   - AVOSCloudCrashReporting
   - AVOSCloudIM
   - BarrageRenderer (~> 1.6.0)
+  - TZImagePickerController
 
 SPEC CHECKSUMS:
   AVOSCloud: 50a81ba9fe043750592355d13589b108771f3724
   AVOSCloudCrashReporting: b1e94cb0929b1f7b688d8c7995b248583af2b58d
   AVOSCloudIM: ad650bf0635e95b12d1aec156131b71d320086d2
   BarrageRenderer: a41bf2260c5ec66b974ec685e9da840c1a8c358f
+  TZImagePickerController: fdb508b0ab14310728fb0d7eb418a7ee0acea741
 
-PODFILE CHECKSUM: 4644f086063b569f22716a8f3dda69094cd4ded5
+PODFILE CHECKSUM: f40b5925fee70acce6ba73c2df031e6b5afd7ccb
 
 COCOAPODS: 1.0.1

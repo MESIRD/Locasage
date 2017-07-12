@@ -24,6 +24,8 @@
 	<string>Wanna use camera to show</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Wanna use location to locate</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Wanna see photo</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

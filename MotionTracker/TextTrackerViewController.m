@@ -273,11 +273,6 @@
     [self _refreshScreenLabels];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-    
-    NSLog(@"Error : %@", error.localizedDescription);
-}
-
 #pragma mark - Others
 
 - (void)didReceiveMemoryWarning {

@@ -11,26 +11,27 @@
 #import "BarragePostViewController.h"
 #import "TextTrackerViewController.h"
 
-@interface HomeViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+#import <AVOSCloud/AVOSCloud.h>
+#import <TZImagePickerController/TZImagePickerController.h>
+
+
+@interface HomeViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *profileSetView;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarView;
 @property (weak, nonatomic) IBOutlet UITextField *nickField;
 
-@property (nonatomic, strong) UIImagePickerController *imagePicker;
+@property (nonatomic, strong) TZImagePickerController *imagePicker;
 
 
 @end
 
 @implementation HomeViewController
 
-- (UIImagePickerController *)imagePicker {
+- (TZImagePickerController *)imagePicker {
     
     if (!_imagePicker) {
-        _imagePicker = [[UIImagePickerController alloc] init];
-        _imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-        _imagePicker.delegate   = self;
-        _imagePicker.allowsEditing = YES;
+        _imagePicker = [[TZImagePickerController alloc] initWithMaxImagesCount:1 delegate:nil];
     }
     return _imagePicker;
 }
@@ -85,27 +86,25 @@
 }
 
 - (void)tapOnAvatarView:(UITapGestureRecognizer *)recognizer {
+    
+    __weak typeof(self) weakSelf = self;
+    [self.imagePicker setDidFinishPickingPhotosHandle:^(NSArray<UIImage *> *photos, NSArray *assets, BOOL isSelectOriginalPhoto) {
+        UIImage *image = photos[0];
+        if (!image) {
+            NSLog(@"Pick image failed!");
+            return;
+        }
+        
+        weakSelf.avatarView.image = image;
+        NSData *data = UIImagePNGRepresentation(image);
+        if (data) {
+            AVFile *file = [AVFile fileWithName:@"avatar.png" data:data];
+            [file saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                NSLog(@"image url : %@", file.url);//返回一个唯一的 Url 地址
+            }];
+        }
+    }];
     [self presentViewController:self.imagePicker animated:YES completion:nil];
-}
-
-#pragma mark - UIImagePickerControllerDelegate
-
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-    UIImage *image = info[UIImagePickerControllerEditedImage];
-    if (!image) {
-        NSLog(@"No image is selected");
-        return;
-    }
-    
-    
-}
-
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*
